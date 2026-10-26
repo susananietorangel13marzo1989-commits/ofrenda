@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Quicksand:wght@400;500;700&display=swap');
+
+:root {
+    --bg-dark: #0a0512;
+    --bg-card: rgba(18, 10, 28, 0.75);
+    --primary-orange: #f59e0b;
+    --deep-purple: #581c87;
+    --fuchsia-accent: #ec4899;
+    --text-light: #f3f4f6;
+    --border-glow: rgba(245, 158, 11, 0.35);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(88, 28, 135, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.1) 0%, transparent 60%);
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Cinzel', serif;
+}
+
+
+.ofrenda-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glow);
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(88, 28, 135, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.ofrenda-card:hover {
+    border-color: rgba(245, 158, 11, 0.6);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(245, 158, 11, 0.3);
+}
+
+
+.glow-title {
+    color: #fef3c7;
+    text-shadow: 0 0 15px rgba(245, 158, 11, 0.5), 
+                 0 0 30px rgba(239, 68, 68, 0.3);
+}
+
+
+.papel-picado-border {
+    background: repeating-linear-gradient(
+        90deg,
+        #ec4899, #ec4899 25px,
+        #8b5cf6 25px, #8b5cf6 50px,
+        #f59e0b 50px, #f59e0b 75px,
+        #10b981 75px, #10b981 100px
+    );
+    height: 10px;
+    width: 100%;
+    border-radius: 9999px;
+}
+
+
+.btn-tradition {
+    background: linear-gradient(135deg, #d97706, #c2410c);
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(217, 119, 6, 0.4);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(254, 243, 199, 0.3);
+}
+
+.btn-tradition:hover {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(245, 158, 11, 0.6);
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0512;
+}
+::-webkit-scrollbar-thumb {
+    background: #b45309;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d97706;
+}
